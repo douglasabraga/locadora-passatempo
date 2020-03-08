@@ -1,0 +1,2 @@
+#Ignorar quaisquer diretórios chamados "vscode"
+.vscode/
