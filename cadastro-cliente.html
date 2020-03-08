@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Passa Tempo | Cadastro de Cliente</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+    <header class="layout-cabecalho">
+        <div class="container">
+            <nav class="navegacao">
+                <a href="index.html"><img src="img/logoPassaTempo.png" width="188" height="44" alt="PassaTempo"></a>
+                <div class="navegacao__menu2">
+                    <button class="botao-chaveador  js-botao-chaveador"></button>
+
+                    <ul class="menu js-menu">
+                        <li class="menu__item">
+                            <a href="gestao-locacao.html">Locações</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="gestao-titulo.html">Titulos</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="gestao-cliente.html">Clientes</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="gestao-ator.html">Atores</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="gestao-classe.html">Classes</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="gestao-diretor.html">Diretores</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="gestao-item.html">Items</a>
+                        </li>
+                        <li class="menu__item  menu__item--botao">
+                            <a href="#" class="botao  botao--cadastrars">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="layout-cadastro">
+        <div class="container">
+
+            <form action="#" method="get">
+
+                <h1 class="titulo-formulario">Cadastrar Sócio</h1>
+                
+                <div class="grupo-entrada">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" class="campo" >
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-8">
+                        <div class="grupo-entrada">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" name="endereco" id="endereco" class="campo" >
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <div class="grupo-entrada">
+                            <label for="data-nascimento">Data de Nascimento</label>
+                            <input type="date" name="dataDeNascimento" id="data-nascimento" class="campo" >
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="grupo-entrada">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" name="telefone" id="telefone" class="campo" required>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <div class="grupo-entrada">
+                            <label for="cpf">CPF</label>
+                            <input type="text" name="cpf" id="cpf" class="campo" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <div class="grupo-entrada">
+                            <label for="sexo">Sexo</label>
+                            <select id="sexo" name="sexo" class="campo" required>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminio">Feminino</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-2">
+                        <div class="grupo-entrada">
+                            <label for="ativo">Ativo</label>
+                            <select id="ativo" name="ativo" class="campo" required>
+                                <option value="sim">Sim</option>
+                                <option value="nao">Não</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="submit" value="Cadastrar Sócio" class="botao  botao--principal">
+
+                <a href="cadastro-dependente.html"><button type="button" class="botao botao--adicionar">Inserir Dependente</button></a>
+                
+            </form>
+        </div>
+
+    </section>
+    
+</body>
+</html>
