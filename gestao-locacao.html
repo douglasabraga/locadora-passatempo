@@ -163,7 +163,7 @@
 
         <!-- Modal EDITAR -->
         <div class="modal fade" id="modalEditar" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">ALTERAR</h5>
@@ -177,76 +177,82 @@
                             <form action="#" method="get">
 
                                 <h1 class="titulo-formulario">Alterar Locação</h1>
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="grupo-entrada">
-                                                <label for="data-locacao">Data de Locação</label>
-                                                <input type="date" name="dataDeLocacao" id="data-locacao" class="campo" required>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-sm-4">
-                                            <div class="grupo-entrada">
-                                                <label for="data-devolucao-prevista">Data de Devolução Prevista</label>
-                                                <input type="date" name="dataDeDevolucaoPrevista" id="data-devolucao-prevista" class="campo" required>
-                                            </div>
-                                        </div>
-                
-                                        <div class="col-sm-4">
-                                            <div class="grupo-entrada">
-                                                <label for="data-devolucao-efetiva">Data de Devolução Efetiva</label>
-                                                <input type="date" name="dataDeDevolucaoEfetiva" id="data-devolucao-efetiva" class="campo" required>
-                                            </div>
+
+                                <div class="row">
+
+                                    <div class="col-sm-4">
+                                        <div class="grupo-entrada">
+                                            <label for="data-locacao">Data de Locação</label>
+                                            <input type="date" name="dataDeLocacao" id="data-locacao" class="campo" required>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="grupo-entrada">
-                                                <label for="item">Item</label>
-                                                <select id="item" name="item" class="campo" required>
-                                                    <option value="item1">Item 1</option>
-                                                    <option value="item2">Item 2</option>
-                                                    <option value="item3">Item 3</option>
-                                                    <option value="item4">Item 4</option>
-                                                    <option value="item5">Item 5</option>
-                                                </select>
-                                            </div>
-                                        </div>
                                     
-                                        
-                                        <div class="col-sm-6">
-                                            <div class="grupo-entrada">
-                                                <label for="cliente">Cliente</label>
-                                                <select id="cliente" class="campo" required>
-                                                    <option value="cliente">Douglas</option>
-                                                    <option value="cliente">Allan</option>
-                                                    <option value="cliente">Braga</option>
-                                                    <option value="cliente">Barbosa</option>
-                                                    <option value="cliente">André</option>
-                                                    <option value="cliente">Pedro</option>
-                                                </select>
-                                            </div>
+                                    <div class="col-sm-4">
+                                        <div class="grupo-entrada">
+                                            <label for="data-devolucao-prevista">Data de Devolução Prevista</label>
+                                            <input type="date" name="dataDeDevolucaoPrevista" id="data-devolucao-prevista" class="campo" required>
                                         </div>
-                                        
+                                    </div>
+            
+                                    <div class="col-sm-4">
+                                        <div class="grupo-entrada">
+                                            <label for="data-devolucao-efetiva">Data de Devolução Efetiva</label>
+                                            <input type="date" name="dataDeDevolucaoEfetiva" id="data-devolucao-efetiva" class="campo" required>
+                                        </div>
                                     </div>
 
-                                    <dir class="row">
+                                </div>
 
-                                        <div class="col-sm-6">
-                                            <div class="grupo-entrada">
-                                                <label for="data-devolucao-prevista">Valor a ser Cobrado</label>
-                                                <input type="text" name="valorCobrado" id="valor-cobrado" class="campo" required>
-                                            </div>
-                                        </div>
-                
-                                        <div class="col-sm-6">
-                                            <div class="grupo-entrada">
-                                                <label for="data-devolucao-efetiva">Valor da Multa</label>
-                                                <input type="text" name="valorMulta" id="valor-multa" class="campo" required>
-                                            </div>
-                                        </div>
+                                <div class="row">
 
-                                    </dir>
+                                    <div class="col-sm-6">
+                                        <div class="grupo-entrada">
+                                            <label for="item">Item</label>
+                                            <select id="item" name="item" class="campo" required>
+                                                <option value="item1">Item 1</option>
+                                                <option value="item2">Item 2</option>
+                                                <option value="item3">Item 3</option>
+                                                <option value="item4">Item 4</option>
+                                                <option value="item5">Item 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                
+                                    
+                                    <div class="col-sm-6">
+                                        <div class="grupo-entrada">
+                                            <label for="cliente">Cliente</label>
+                                            <select id="cliente" name="cliente" class="campo" required>
+                                                <option value="Douglas">Douglas</option>
+                                                <option value="Allan">Allan</option>
+                                                <option value="Braga">Braga</option>
+                                                <option value="Barbosa">Barbosa</option>
+                                                <option value="André">André</option>
+                                                <option value="Pedro">Pedro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-sm-6">
+                                        <div class="grupo-entrada">
+                                            <label for="valor-cobrado">Valor a ser Cobrado</label>
+                                            <input type="text" name="valorCobrado" id="valor-cobrado" class="campo" required>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-sm-6">
+                                        <div class="grupo-entrada">
+                                            <label for="valor-multa">Valor da Multa</label>
+                                            <input type="text" name="valorMulta" id="valor-multa" class="campo" required>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                    
                             
                                 <input type="submit" value="Alterar Locação" class="botao  botao--principal">
                                 <!-- <a href="cadastro-classe.html"><button class="botao botao--adicionar">Inserir Dependente</button></a> -->
@@ -264,7 +270,7 @@
 
         <!-- Modal EXCLUIR -->
         <div class="modal fade" id="modalExcluir" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">EXCLUIR</h5>
@@ -289,7 +295,7 @@
         </div>
 
         <div class="modal fade" id="modalDevolver" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">DEVOLUÇÃO</h5>
@@ -299,22 +305,27 @@
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
-                            <dir class="row">
-                            <div class="col-sm-6">
-                                <div class="grupo-entrada">
-                                    <label for="data-devolucao-prevista">Valor a ser Cobrado</label>
-                                    <input type="text" name="valorCobrado" id="valor-cobrado" class="campo" required>
+
+                            <div class="row">
+
+                                <div class="col-sm-6">
+                                    <div class="grupo-entrada">
+                                        <label for="valor-cobrado">Valor a ser Cobrado</label>
+                                        <input type="text" name="valorCobrado" id="valor-cobrado" class="campo" required>
+                                    </div>
                                 </div>
-                            </div>
-    
-                            <div class="col-sm-6">
-                                <div class="grupo-entrada">
-                                    <label for="data-devolucao-efetiva">Valor da Multa</label>
-                                    <input type="text" name="valorMulta" id="valor-multa" class="campo" required>
+        
+                                <div class="col-sm-6">
+                                    <div class="grupo-entrada">
+                                        <label for="valor-multa">Valor da Multa</label>
+                                        <input type="text" name="valorMulta" id="valor-multa" class="campo" required>
+                                    </div>
                                 </div>
+
                             </div>
-                        </dir>
-                        <input type="submit" value="Finalizar Devolução" class="botao  botao--principal">
+
+                            <input type="submit" value="Finalizar Devolução" class="botao  botao--principal">
+
                         </div>
                     </div>
                     <div class="modal-footer"></div>
