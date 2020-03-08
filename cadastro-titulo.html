@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Passa Tempo | Cadastro de Titulo</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/componentes.css">
+
+    </head>
+
+    <body>
+
+        <header class="layout-cabecalho">
+            
+            <div class="container">
+                <nav class="navegacao">
+
+                    <a href="index.html"><img src="img/logoPassaTempo.png" width="188" height="44" alt="PassaTempo"></a>
+
+                    <div class="navegacao__menu2">
+                        <button class="botao-chaveador  js-botao-chaveador"></button>
+
+                        <ul class="menu js-menu">
+                            <li class="menu__item">
+                                <a href="gestao-locacao.html">Locações</a>                            </li>
+                            <li class="menu__item">
+                                <a href="gestao-titulo.html">Titulos</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="gestao-cliente.html">Clientes</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="gestao-ator.html">Atores</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="gestao-classe.html">Classes</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="gestao-diretor.html">Diretores</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="gestao-item.html">Items</a>
+                            </li>
+                            <li class="menu__item  menu__item--botao">
+                                <a href="#" class="botao  botao--cadastrars">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="layout-cadastro">
+            <div class="container">
+
+                <form action="#" method="get">
+
+                    <h1 class="titulo-formulario">Cadastrar Titulo</h1>
+                    
+                    <div class="grupo-entrada">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" class="campo" required>
+                    </div>
+                    <div class="grupo-entrada">
+                        <label for="ano">Ano</label>
+                        <input type="text" name="ano" id="ano" class="campo" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="grupo-entrada">
+                                <label for="valor">Valor</label>
+                                <input type="text" name="valor" id="valor" class="campo" required>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-6">
+                            <div class="grupo-entrada">
+                                <label for="data-devolucao">Data de Devolução</label>
+                                <input type="date" name="dataDeDevolucao" id="data-devolucao" class="campo" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grupo-entrada">
+                        <label for="categoria">Categoria</label>
+                        <select id="categoria" class="campo" required>
+                            <option value="Ação">Ação</option>
+                            <option value="Porradaria">Porradaria</option>
+                            <option value="Aventura">Aventura</option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-entrada">
+                        <label for="ator">Atores</label>
+                        <select id="ator" name="ator" multiple class="custom-select campo">
+                            <option value="João">João</option>
+                            <option value="Felipe">Felipe</option>
+                            <option value="Douglas">Douglas</option>
+                            <option value="Allan">Allan</option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-entrada">
+                        <label for="diretor">Diretor</label>
+                        <select id="diretor" name="diretor" class="campo" required>
+                            <option value="Jorjão">Jorjão</option>
+                            <option value="Pedrão">Pedrão</option>
+                            <option value="Léo">Léo</option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-entrada">
+                        <label for="sinopse">Sinopse</label>
+                        <textarea class="form-control campo" rows="3"></textarea>
+                    </div>
+                    
+                    <input type="submit" value="Cadastrar" class="botao  botao--principal">
+                </form>
+            </div>
+
+        </section>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
